@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [DemoSuite]">
+  <test thread-count="5" name="DemoTest(failed)">
+    <parameter name="browser" value="firefox"/>
+    <parameter name="url" value="http://demowebshop.tricentis.com/"/>
+    <classes>
+      <class name="com.demowebshop.testscript.LoginTest">
+        <methods>
+          <include name="verifyValidLogin"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.demowebshop.testscript.LoginTest -->
+    </classes>
+  </test> <!-- DemoTest(failed) -->
+</suite> <!-- Failed suite [DemoSuite] -->

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DemoSuite">
+  <test thread-count="5" name="DemoTest">
+  <parameter name="browser" value="firefox"/>
+  <parameter name="url" value="http://demowebshop.tricentis.com/"/>
+    <classes>
+     
+      <class name="com.demowebshop.testscript.HomeTest"/>
+      <class name="com.demowebshop.testscript.LoginTest"/>
+      <class name="com.demowebshop.testscript.UserAccountTest"/>
+      <class name="com.demowebshop.testscript.RegisterTest"/>
+    </classes>
+  </test> <!-- DemoTest -->
+</suite> <!-- DemoSuite -->
